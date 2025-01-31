@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is initially visible.
+  </div>
+  <button onclick="myFunction()">Click Me</button>
+
+  <script>
+    function myFunction() {
+      const divElement = document.getElementById("myDiv");
+      if (divElement) {
+        divElement.style.display = "none";
+      } else {
+        console.error("Element with id 'myDiv' not found!");
+        // Or provide an alternative solution/user feedback here
+        alert("Element not found!");
+      }
+    }
+  </script>
+</body>
+</html>
